@@ -1,0 +1,19 @@
+{
+  "name": "pindakaas",
+  "version": "0.0.1",
+  "description": "Dutch natural language parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplyGits/pindakaas.git"
+  },
+  "author": "simply <hello@simplyapps.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simplyGits/pindakaas/issues"
+  },
+  "homepage": "https://github.com/simplyGits/pindakaas#readme"
+}
