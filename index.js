@@ -21,11 +21,16 @@
 	module.exports = function (str, options) {
 		var result = [];
 
+		var excludeModules = (options && options.excludeModules) || [];
+
 		for (var i = 0; i < modules.length; i++) {
 			var module = modules[i];
-			if (modules.indexOf(module.name) === -1) continue;
+			if (excludeModules.indexOf(module.name) > -1) {
+				// Module is excluded
+				continue;
+			}
 
-			// Run module with `str` and push result.
+			result = result.concat(module(str));
 		}
 
 		return result;
